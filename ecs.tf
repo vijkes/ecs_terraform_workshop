@@ -7,7 +7,7 @@ resource "aws_ecs_cluster" "web-cluster" {
 }
 
 resource "aws_iam_service_linked_role" "ecs" {
-  aws_service_name = "ecs.amazonaws.com"
+  aws_service_name = "ecs.amazonaws.com2"
 }
 
 resource "aws_ecs_capacity_provider" "test" {
