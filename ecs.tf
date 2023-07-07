@@ -40,7 +40,7 @@ resource "aws_ecs_service" "service" {
   desired_count   = 3
   ordered_placement_strategy {
     type  = "binpack"
-    field = "cpu"
+    field = "cpu" 
   }
   load_balancer {
     target_group_arn = aws_lb_target_group.lb_target_group.arn
