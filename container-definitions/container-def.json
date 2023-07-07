@@ -1,8 +1,8 @@
 [
     {
-      "name": "binpipe-devops",
-      "image": "879566836351.dkr.ecr.us-east-1.amazonaws.com/workshop:latest",
-      "cpu": 10,
+      "name": "colortest",
+      "image": "221109526298.dkr.ecr.us-east-1.amazonaws.com/colortest",
+      "cpu": 2,
       "memory": 256,
       "essential": true,
       "portMappings": [
