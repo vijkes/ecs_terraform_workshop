@@ -5,7 +5,7 @@ resource "aws_lb" "test-lb" {
   subnets            = module.vpc.public_subnets
   tags = {
     "env"       = "dev"
-    "createdBy" = "binpipe"
+    
   }
   security_groups = [aws_security_group.lb.id]
 }
@@ -28,7 +28,7 @@ resource "aws_security_group" "lb" {
 
   tags = {
     "env"       = "dev"
-    "createdBy" = "binpipe"
+    
   }
 }
 
