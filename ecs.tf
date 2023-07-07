@@ -44,7 +44,7 @@ resource "aws_ecs_service" "service" {
   }
   load_balancer {
     target_group_arn = aws_lb_target_group.lb_target_group.arn
-    container_name   = "binpipe-devops"
+    container_name   = "colortest"
     container_port   = 80
   }
   # Optional: Allow external changes without Terraform plan difference(for example ASG)
